@@ -39,17 +39,3 @@ double findBestSimScore(string genome , string sequence)
     return bestSimScore;
 }
 
-int main()
-{
-    // test case 1
-    // expected output
-    // 0.666667
-    cout << findBestSimScore("ATACGC" , "ACT") << endl;
-    
-    // test case 2
-    // expected output
-    // 0
-    cout << findBestSimScore("" , "") << endl;
-    
-    return 0;
-}
