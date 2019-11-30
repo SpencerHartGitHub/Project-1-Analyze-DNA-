@@ -1,3 +1,15 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+/*
+* Algorithm: given a genome see what the best score is from the given sequence
+* 1. Add restrictions
+* 2. Do the code from countMatches to find the mismatches and add those to mismatches
+* 3. Calc the sim score and store it, then reset mismatch 
+* 4. repeat and then the best score will b outputed
+*/
+
 double findBestSimScore(string genome , string sequence)
 {
     double bestSimScore = 0; // initialize everything here as doubles
@@ -38,4 +50,3 @@ double findBestSimScore(string genome , string sequence)
     }
     return bestSimScore;
 }
-
