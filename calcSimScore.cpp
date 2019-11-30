@@ -1,3 +1,16 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+/*
+* Algorithm: Calculate the sim score given 2 sequences
+* 1. Establish restrictions for if they are different lengths or if the are equal 
+* 2. create a counter for mismatches
+* 3. make a for loop that for as long as i is less than the length of the first sequence keep adding 1 to i
+* 4. go through both sequences index by index and if there are mismatches add those to the counter
+* 5. Then plug the numbers into the equation to get sim score
+*/
+
 double calcSimScore(string firstSeq , string secondSeq)
 {
     if (firstSeq.length() != secondSeq.length()) // if they are not the same length
